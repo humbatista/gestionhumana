@@ -1,0 +1,66 @@
+CRITICAL - 27-06-2022 17:20:22 --> Undefined index: funcion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\form\empleados_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 40, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(45): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 27-06-2022 17:21:13 --> Undefined index: funcion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\form\empleados_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 40, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(45): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 27-06-2022 17:21:55 --> Undefined index: funcion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\form\empleados_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 40, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(45): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 27-06-2022 17:22:56 --> Undefined index: funcion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\form\empleados_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 40, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(45): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 27-06-2022 17:23:01 --> Undefined index: funcion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\form\empleados_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 40, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(45): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 27-06-2022 17:23:53 --> Undefined index: funcion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\form\empleados_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 40, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(45): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

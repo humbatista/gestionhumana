@@ -1,0 +1,42 @@
+CRITICAL - 26-09-2022 12:51:07 --> Undefined variable: nombre
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\intranet\evaluar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 23, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(21): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 26-09-2022 12:52:25 --> Undefined variable: nombre
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\intranet\evaluar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 23, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(21): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 26-09-2022 14:57:49 --> syntax error, unexpected '}'
+#0 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp2\\htdoc...')
+#1 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Emplead...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Emplead...')
+#3 [internal function]: spl_autoload_call('Modules\\Emplead...')
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Emplea...', true)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 26-09-2022 14:58:09 --> syntax error, unexpected '}'
+#0 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp2\\htdoc...')
+#1 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Emplead...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Emplead...')
+#3 [internal function]: spl_autoload_call('Modules\\Emplead...')
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Emplea...', true)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

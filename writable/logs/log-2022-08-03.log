@@ -1,0 +1,37 @@
+CRITICAL - 03-08-2022 14:24:10 --> Undefined index: function
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\form\empleados_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 40, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(45): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 03-08-2022 14:51:47 --> Array to string conversion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Usuario.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp2\\htdoc...', 54, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Usuario->update()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Usuario))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 03-08-2022 15:02:02 --> You must set the database table to be used with your query.
+#0 C:\xampp2\htdocs\gestionhumana\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\Model.php(719): CodeIgniter\Model->builder()
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Usuario.php(55): CodeIgniter\Model->__call('updateExclusion', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Usuario->update()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Usuario))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 03-08-2022 15:05:15 --> Allowed fields must be specified for model: Modules\Solicitudes\Models\Usuario_model
+#0 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('Modules\\Solicit...')
+#1 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(841): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp2\htdocs\gestionhumana\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Usuario.php(54): CodeIgniter\Model->update('', Array)
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Usuario->update()
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Usuario))
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

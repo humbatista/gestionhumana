@@ -1,0 +1,40 @@
+CRITICAL - 02-11-2022 15:56:42 --> Cannot use object of type stdClass as array
+#0 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->export()
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-11-2022 16:11:41 --> Call to undefined function Modules\Empleados\Controllers\debug_to_console()
+#0 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->export()
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-11-2022 16:31:45 --> Array to string conversion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp2\\htdoc...', 82, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->export()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 02-11-2022 16:33:29 --> Array to string conversion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp2\\htdoc...', 82, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->export()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 02-11-2022 16:34:09 --> Array to string conversion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp2\\htdoc...', 82, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->export()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 02-11-2022 16:34:15 --> Array to string conversion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp2\\htdoc...', 82, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->export()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

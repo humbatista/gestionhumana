@@ -1,0 +1,126 @@
+CRITICAL - 14-09-2022 12:49:16 --> Undefined variable: nombre
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Views\intranet\evaluar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 21, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(20): view('Modules\\Emplead...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 14-09-2022 15:14:40 --> Column 'nombres' cannot be null
+ERROR - 14-09-2022 15:25:48 --> Column 'nombres' cannot be null
+ERROR - 14-09-2022 15:27:19 --> Column 'nombres' cannot be null
+ERROR - 14-09-2022 15:28:10 --> Column 'nombres' cannot be null
+CRITICAL - 14-09-2022 15:28:10 --> Column 'nombres' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 14-09-2022 16:33:55 --> Column 'fec_ingreso' cannot be null
+CRITICAL - 14-09-2022 16:33:55 --> Column 'fec_ingreso' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 14-09-2022 16:35:55 --> Column 'fec_ingreso' cannot be null
+CRITICAL - 14-09-2022 16:35:55 --> Column 'fec_ingreso' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 14-09-2022 16:37:09 --> Column 'calidad' cannot be null
+CRITICAL - 14-09-2022 16:37:09 --> Column 'calidad' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 14-09-2022 16:45:36 --> Column 'calidad' cannot be null
+CRITICAL - 14-09-2022 16:45:36 --> Column 'calidad' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 14-09-2022 16:48:29 --> Column 'presion' cannot be null
+CRITICAL - 14-09-2022 16:48:29 --> Column 'presion' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 14-09-2022 17:10:02 --> Column 'obs_utilizacion' cannot be null
+CRITICAL - 14-09-2022 17:10:02 --> Column 'obs_utilizacion' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluar.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluar->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluar))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

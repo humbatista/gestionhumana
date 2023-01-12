@@ -1,0 +1,230 @@
+CRITICAL - 30-08-2022 13:42:33 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 13:50:34 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 13:51:47 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 13:52:36 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 13:57:19 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:14:32 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:17:18 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:22:57 --> Undefined variable: area
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\pension_view.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 118, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pension.php(37): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pension->admin()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pension))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 30-08-2022 14:34:08 --> Undefined variable: area
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\renuncia_view.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 126, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Renuncia.php(35): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Renuncia->admin()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Renuncia))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 30-08-2022 14:38:46 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:44:22 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:51:27 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:51:49 --> Undefined variable: area
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\pension_view.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 118, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pension.php(37): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pension->admin()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pension))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 30-08-2022 14:52:43 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:54:41 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 14:55:41 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:00:10 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:08:12 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:08:14 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:08:53 --> Undefined variable: area
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\pension_view.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 118, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pension.php(37): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pension->admin()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pension))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 30-08-2022 15:09:16 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:09:28 --> Undefined variable: area
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\pension_view.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 118, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pension.php(37): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pension->admin()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pension))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 30-08-2022 15:10:13 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:11:44 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:12:03 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:12:05 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:19:01 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:21:05 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:22:21 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-08-2022 15:22:27 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

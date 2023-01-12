@@ -1,0 +1,30 @@
+CRITICAL - 19-08-2022 16:21:36 --> Cannot use object of type stdClass as array
+#0 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_reporte->export()
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_reporte))
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 19-08-2022 16:23:21 --> include(C:\xampp2\htdocs\gestionhumana\vendor\composer/../maennchen/zipstream-php/src/Option/Archive.php): failed to open stream: No such file or directory
+#0 C:\xampp2\htdocs\gestionhumana\vendor\composer\ClassLoader.php(571): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xamp...', 'C:\\xampp2\\htdoc...', 571, Array)
+#1 C:\xampp2\htdocs\gestionhumana\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp2\htdocs\gestionhumana\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp2\\htdoc...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('ZipStream\\Optio...')
+#4 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(520): spl_autoload_call('ZipStream\\Optio...')
+#5 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_reporte.php(75): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('Reporte Inclusi...')
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_reporte->export()
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_reporte))
+#8 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 19-08-2022 16:26:09 --> include(C:\xampp2\htdocs\gestionhumana\vendor\composer/../maennchen/zipstream-php/src/Option/Archive.php): failed to open stream: No such file or directory
+#0 C:\xampp2\htdocs\gestionhumana\vendor\composer\ClassLoader.php(571): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xamp...', 'C:\\xampp2\\htdoc...', 571, Array)
+#1 C:\xampp2\htdocs\gestionhumana\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp2\htdocs\gestionhumana\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp2\\htdoc...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('ZipStream\\Optio...')
+#4 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(520): spl_autoload_call('ZipStream\\Optio...')
+#5 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_reporte.php(75): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('Reporte Inclusi...')
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_reporte->export()
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_reporte))
+#8 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

@@ -1,0 +1,14 @@
+ERROR - 23-06-2022 17:28:52 --> Table 'actadb.v_empleados' doesn't exist
+CRITICAL - 23-06-2022 17:28:52 --> Table 'actadb.v_empleados' doesn't exist
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Empleados.php(28): CodeIgniter\BaseModel->paginate(15)
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Empleados->index()
+#8 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Empleados))
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -1,0 +1,252 @@
+CRITICAL - 13-10-2022 13:21:57 --> Invalid file: Modules\Solicitudes\Views\form\vacaciones_view.php
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\Solicit...')
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(17): view('Modules\\Solicit...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 13-10-2022 13:24:14 --> Undefined variable: exclusion
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\vacaciones_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 24, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(17): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 13-10-2022 14:15:25 --> Column 'periodo' cannot be null
+CRITICAL - 13-10-2022 14:15:25 --> Column 'periodo' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 13-10-2022 14:16:09 --> Column 'periodo' cannot be null
+CRITICAL - 13-10-2022 14:16:09 --> Column 'periodo' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 13-10-2022 14:16:15 --> Column 'periodo' cannot be null
+CRITICAL - 13-10-2022 14:16:15 --> Column 'periodo' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 13-10-2022 14:17:11 --> Column 'periodo' cannot be null
+CRITICAL - 13-10-2022 14:17:11 --> Column 'periodo' cannot be null
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\gestionhumana\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\gestionhumana\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->save()
+#10 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#11 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 13-10-2022 14:20:42 --> Undefined property: stdClass::$status
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\vacaciones_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp2\\htdoc...', 25, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(17): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 13-10-2022 14:21:44 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(17): view('Modules\\Solicit...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 13-10-2022 14:22:27 --> Undefined variable: semaforo
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\vacaciones_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 34, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(17): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 13-10-2022 14:23:33 --> Undefined variable: semaforo
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Views\form\vacaciones_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 34, Array)
+#1 C:\xampp2\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Vacaciones.php(17): view('Modules\\Solicit...', Array)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Vacaciones->index()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Vacaciones))
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 13-10-2022 14:58:04 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 14:59:24 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:00:20 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:00:29 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:00:56 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:02:06 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:02:17 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:02:35 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:05:29 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:05:48 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:07:46 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:07:49 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:08:36 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:08:39 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:08:39 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:08:41 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:09:11 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 13-10-2022 15:10:50 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

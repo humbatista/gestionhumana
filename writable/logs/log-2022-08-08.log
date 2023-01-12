@@ -1,0 +1,60 @@
+CRITICAL - 08-08-2022 13:39:05 --> Class 'Modules\Solicitudes\Controllers\Vendor\PhpOffice\PhpWord\PhpWord' not found
+#0 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 08-08-2022 16:22:58 --> Could not open 'http://localhost/gestionhumanaMyFile.docx' for writing.
+#0 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpword\src\PhpWord\Writer\Word2007.php(99): PhpOffice\PhpWord\Writer\AbstractWriter->getZipArchive('http://localhos...')
+#1 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_admin.php(141): PhpOffice\PhpWord\Writer\Word2007->save('http://localhos...')
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 08-08-2022 16:22:59 --> Could not open 'http://localhost/gestionhumanaMyFile.docx' for writing.
+#0 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpword\src\PhpWord\Writer\Word2007.php(99): PhpOffice\PhpWord\Writer\AbstractWriter->getZipArchive('http://localhos...')
+#1 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_admin.php(141): PhpOffice\PhpWord\Writer\Word2007->save('http://localhos...')
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 08-08-2022 16:23:05 --> Could not open 'http://localhost/gestionhumanaMyFile.docx' for writing.
+#0 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpword\src\PhpWord\Writer\Word2007.php(99): PhpOffice\PhpWord\Writer\AbstractWriter->getZipArchive('http://localhos...')
+#1 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_admin.php(141): PhpOffice\PhpWord\Writer\Word2007->save('http://localhos...')
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 08-08-2022 16:23:06 --> Could not open 'http://localhost/gestionhumanaMyFile.docx' for writing.
+#0 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpword\src\PhpWord\Writer\Word2007.php(99): PhpOffice\PhpWord\Writer\AbstractWriter->getZipArchive('http://localhos...')
+#1 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_admin.php(141): PhpOffice\PhpWord\Writer\Word2007->save('http://localhos...')
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 08-08-2022 16:23:46 --> Could not open 'http://localhost/gestionhumanaphp://output' for writing.
+#0 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpword\src\PhpWord\Writer\Word2007.php(99): PhpOffice\PhpWord\Writer\AbstractWriter->getZipArchive('http://localhos...')
+#1 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_admin.php(141): PhpOffice\PhpWord\Writer\Word2007->save('http://localhos...')
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 08-08-2022 16:23:47 --> Could not open 'http://localhost/gestionhumanaphp://output' for writing.
+#0 C:\xampp2\htdocs\gestionhumana\vendor\phpoffice\phpword\src\PhpWord\Writer\Word2007.php(99): PhpOffice\PhpWord\Writer\AbstractWriter->getZipArchive('http://localhos...')
+#1 C:\xampp2\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Inclusion_admin.php(141): PhpOffice\PhpWord\Writer\Word2007->save('http://localhos...')
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 08-08-2022 17:15:29 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Inclusion_admin->export()
+#1 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Inclusion_admin))
+#2 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

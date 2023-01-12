@@ -1,0 +1,23 @@
+CRITICAL - 29-09-2022 13:06:58 --> syntax error, unexpected '$table' (T_VARIABLE)
+#0 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp2\\htdoc...')
+#1 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Emplead...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Emplead...')
+#3 [internal function]: spl_autoload_call('Modules\\Emplead...')
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Emplea...', true)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 29-09-2022 13:07:18 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 29-09-2022 14:11:42 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp2\\htdoc...')
+#1 C:\xampp2\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Emplead...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Emplead...')
+#3 [internal function]: spl_autoload_call('Modules\\Emplead...')
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Emplea...', true)
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

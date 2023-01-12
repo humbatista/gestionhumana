@@ -1,0 +1,103 @@
+ERROR - 09-09-2022 14:09:58 --> Table 'actadb.app_emplados' doesn't exist
+CRITICAL - 09-09-2022 14:09:58 --> Table 'actadb.app_emplados' doesn't exist
+#0 C:\xampp2\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\gestionhumana\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Models\Empleados_Model.php(59): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(16): Modules\Empleados\Models\Empleados_Model->getsupervisados(NULL)
+#6 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#7 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#8 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 09-09-2022 14:11:38 --> Invalid file: Modules\Empleados\Views\intranet\evaluacion.php
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\Emplead...')
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 14:30:02 --> Invalid file: Modules\Empleados\Views\intranet\evaluacion.php
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\Emplead...')
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 14:40:10 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 14:40:37 --> syntax error, unexpected '}'
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 14:54:15 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 14:54:31 --> syntax error, unexpected '"<li>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 14:55:25 --> syntax error, unexpected '"<ul>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 14:55:33 --> syntax error, unexpected '"<ul>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 15:17:38 --> syntax error, unexpected '"<div class='col-6'>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 09-09-2022 15:40:22 --> syntax error, unexpected '"</footer>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+#0 C:\xampp2\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp2\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Emplead...', Array, true)
+#2 C:\xampp2\htdocs\gestionhumana\Modules\Empleados\Controllers\Evaluacion.php(19): view('Modules\\Emplead...', Array)
+#3 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Empleados\Controllers\Evaluacion->index()
+#4 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Empleados\Controllers\Evaluacion))
+#5 C:\xampp2\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp2\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
