@@ -172,7 +172,7 @@ class Accionpersonal_admin extends Controller{
             }
         }
         $section->addTextBreak();
-        //$section->addText(htmlspecialchars('Total de visitas durante el periodo: '. $total),$fuenteb);
+        $section->addText(htmlspecialchars('Preparado por: '. session('nombre')),$fuente,['align'=>'right']);
         $section->addTextBreak();
         $section->addText(htmlspecialchars('Recibido por:____________________________'),$fuente,['align'=>'right']);
         $phpWord -> getCompatibility() -> setOoxmlVersion(12);
