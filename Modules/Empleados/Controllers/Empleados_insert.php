@@ -36,6 +36,7 @@ class Empleados_insert extends BaseController{
             'telefono'      => $this->request->getPost('telefono'),
             'fecnacimiento' => $this->request->getPost('fecnacimiento'),
             'sexo'   => $this->request->getPost('sexo'),
+            'sueldo' => $this->request->getPost('sueldo'),
             'cargo'  => $this->request->getPost('cargo'),
             'funciones' => $this->request->getPost('funciones'),
             'grupo'  => $this->request->getPost('grupo'),
@@ -62,6 +63,7 @@ class Empleados_insert extends BaseController{
             'telefono'      => $this->request->getPost('telefono'),
             'fecnacimiento' => $this->request->getPost('fecnacimiento'),
             'sexo'   => $this->request->getPost('sexo'),
+            'sueldo' => $this->request->getPost('sueldo'),
             'cargo'  => $this->request->getPost('cargo'),
             'funciones' => $this->request->getPost('funciones'),
             'grupo'  => $this->request->getPost('grupo'),
@@ -75,4 +77,6 @@ class Empleados_insert extends BaseController{
         $model->updateServidor($data, $codigo);
         return redirect()->to('empleados/servidor?codigo='.$codigo);
     }
+
+
 }

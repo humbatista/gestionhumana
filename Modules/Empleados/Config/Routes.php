@@ -7,6 +7,7 @@ $routes->get('empleados', '\Modules\Empleados\Controllers\Empleados::index');
         $routes->get('/', '\Modules\Empleados\Controllers\Empleados::index');
         $routes->get('export', '\Modules\Empleados\Controllers\Empleados::export');
         $routes->post('export', '\Modules\Empleados\Controllers\Empleados::export');
+        $routes->get('certificado', '\Modules\Empleados\Controllers\Empleados::certificado');
         $routes->get('dashboard', '\Modules\Empleados\Controllers\Dashboard::index');
         $routes->get('servidor1', '\Modules\Empleados\Controllers\Dashboard::servidor');
         $routes->get('evaluacion', '\Modules\Empleados\Controllers\Evaluacion::index');

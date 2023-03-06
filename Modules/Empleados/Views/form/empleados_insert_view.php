@@ -37,6 +37,10 @@
                                 <option value='F'>Mujer</option>
                             </select>
                         </div><br>
+                        <div class="form-group">
+                            <label for="sueldo">Sueldo:</label>
+                            <input class="form-control" type="text" name="sueldo">
+                        </div>
                     </div>
                     <div class="col-sm-6">
                         <h5> Datos Posicion Ocupada</h5>

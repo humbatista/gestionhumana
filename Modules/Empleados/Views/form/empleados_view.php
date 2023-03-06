@@ -52,7 +52,7 @@
                 echo "<td>
                         <a href='http://localhost/gestionhumana/empleados/servidor?codigo=".$rows['codigo']."'>Ver</a>
                         <a href= 'http://localhost/gestionhumana/empleados/editar?id=".$rows['codigo']."' class='btn btn-sm btn-warning' data-id=". $rows['codigo'].">Editar</a>
-                        <a href='#' class='btn btn-success'>Certificado</a>
+                        <a href= 'http://localhost/gestionhumana/empleados/certificado?id=".$rows['codigo']."' class='btn btn-success'>Certificado</a>
                       </td>";
                 echo "</tr>";
             }
@@ -67,4 +67,15 @@
     </div>
 
 </div>
+<script>
+    function ImpCertificado() {
+        //alert('funciona');
+        $.ajax({
+            //url: '<?php //echo base_url('solicitud/reporte/inclusion/export');?>',
+            url: '<?php echo base_url('empleados/export');?>',
+            type: "post",
+            data:{},
+        });
+    };
+    </script>
 

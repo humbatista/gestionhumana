@@ -8,7 +8,7 @@ class Empleados_Model extends Model{
     // Uncomment below if you want add primary key
     protected $primaryKey = 'codigo';
     protected $allowedFields = ['apellido', 'nombre','cedula','telefono', 'cargo', 'funciones','grupo', 'unidad','supervisor', 'encargado', 'fecingreso',
-    'fecsalida','fecnacimiento','sexo','creado','feccreado','modificado', 'fecmodificado','estado','condicion'];
+    'fecsalida','fecnacimiento','sexo','sueldo','creado','feccreado','modificado', 'fecmodificado','estado','condicion'];
 
    public function getEmpleadobyCodigo($codigo){
         // $sql= ("SELECT e.codigo, e.apellido, e.nombre, e.cedula, c.descripcion cargo, f.descripcion funciones, e.fecingreso, e.fecnacimiento "
@@ -17,7 +17,7 @@ class Empleados_Model extends Model{
         // . "left join app_funciones f on e.funciones = f.id "
         // . "Where e.codigo = ?; ", $codigo);
         $query = $this->db->query("SELECT e.codigo, e.apellido, e.nombre, e.cedula, c.descripcion cargo, f.descripcion funcion, e.funciones, e.supervisor, e.encargado,
-        e.fecingreso, e.fecnacimiento, e.grupo, e.unidad, e.sexo
+        e.fecingreso, e.fecnacimiento, e.grupo, e.unidad, e.sexo, e.sueldo
             FROM app_empleados e 
             inner join app_cargo c on e.cargo =  c.codigo 
             left join app_funciones f on e.funciones = f.id
@@ -65,5 +65,15 @@ class Empleados_Model extends Model{
         $builder = $this->db->table('app_empleados');
         return $builder->getWhere(['supervisor' => $sup ]);
     }
+
+    public function certificado($id){
+        $query = $this->db->query("SELECT concat(e.nombre ,' ', e.apellido) nombre, e.cedula, e.fecingreso, c.descripcion cargo, e.sueldo, u.descripcion unidad, e.sexo
+        FROM `app_empleados` e, app_cargo c, app_unidad u 
+        WHERE e.cargo = c.codigo and e.unidad = u.codigo and e.codigo = ?", [$id]);
+        return $query;
+    }
+
+    //SELECT e.nombre, e.cedula, e.fecingreso, c.descripcion cargo, e.sueldo, u.descripcion unidad FROM `app_empleados` e, app_cargo c, app_unidad u 
+    //WHERE e.cargo = c.codigo and e.unidad = u.codigo
 
 }

@@ -59,6 +59,8 @@
                             <select name="supervisor" class="form-control supervisor" id="supervisor" value=<?= esc($supervisor) ?>>
                                 <option value= <?= esc($supervisor) ?>>Selecciona Supervisor</option>
                             </select>
+                            <label for="sueldo">Sueldo:</label>
+                            <input class="form-control sueldo" type="text" name="sueldo" id="sueldo" value=<?= esc($sueldo)?>>
                             <label for="fecingreso">Fecha Ingreso:</label>
                             <input type="date" class="form-control" id="fecingreso" name="fecingreso" value= <?= esc($fecingreso) ?>><br>
                             
