@@ -34,6 +34,7 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->post('accionpersonal/update', '\Modules\Solicitudes\Controllers\Accionpersonal::update');
         $routes->get('accionpersonal_export', '\Modules\Solicitudes\Controllers\Accionpersonal::export');
         $routes->get('vacaciones', '\Modules\Solicitudes\Controllers\Vacaciones::index');
+        $routes->get('vacaciones_export', '\Modules\Solicitudes\Controllers\Vacaciones::export');
         $routes->post('vacaciones/save', '\Modules\Solicitudes\Controllers\Vacaciones::save');
         $routes->get('centro_ajaxsearch', '\Modules\Solicitudes\Controllers\AjaxSearchControllers::ajaxsearch');
         $routes->get('buscar', '\Modules\Solicitudes\Controllers\ObservacionControllers::buscar');
@@ -68,6 +69,8 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->get('admrenuncia/export', '\Modules\Solicitudes\Controllers\Renuncia_admin::export');
         $routes->get('admaccion', '\Modules\Solicitudes\Controllers\Accionpersonal_admin::loadRecord');
         $routes->get('admaccion/export', '\Modules\Solicitudes\Controllers\Accionpersonal_admin::export');
+        $routes->get('admvacacion', '\Modules\Solicitudes\Controllers\Vacaciones_admin::loadRecord');
+        $routes->get('admvacacion/export', '\Modules\Solicitudes\Controllers\Vacaciones_admin::export');
         
         $routes->get('pension', '\Modules\Solicitudes\Controllers\Pension::admin');
         $routes->post('pension/save', '\Modules\Solicitudes\Controllers\Pension::save');
@@ -111,6 +114,10 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->post('renuncia/aceptar', '\Modules\Solicitudes\Controllers\Renuncia_admin::aceptar');
         $routes->post('renuncia/devolver', '\Modules\Solicitudes\Controllers\Renuncia_admin::devolver');
         $routes->post('renuncia/rechazar', '\Modules\Solicitudes\Controllers\Renuncia_admin::rechazar');
+        $routes->post('vacacion/aprobar', '\Modules\Solicitudes\Controllers\Vacaciones_admin::aprobar');
+        $routes->post('vacacion/aceptar', '\Modules\Solicitudes\Controllers\Vacaciones_admin::aceptar');
+        $routes->post('vacacion/devolver', '\Modules\Solicitudes\Controllers\Vacaciones_admin::devolver');
+        $routes->post('vacacion/rechazar', '\Modules\Solicitudes\Controllers\Vacaciones_admin::rechazar');
     });
 
     $routes->group('solicitud/reporte', function ($routes) {;

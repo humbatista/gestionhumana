@@ -55,6 +55,7 @@ class Pension extends Controller{
             'centro_educativo' => $this-> request->getPost('search'),
             'puesto' => $this-> request->getPost('puesto'),
             'area' => $this-> request->getPost('area'),
+            'tipo' => $this-> request->getPost('tipo'),
             'usuario' => session('usuario'),
             'distrito' => session('distrito'),
             'activa' => 'SI',

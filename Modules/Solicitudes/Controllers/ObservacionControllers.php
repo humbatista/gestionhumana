@@ -75,8 +75,11 @@ class ObservacionControllers extends Controller{
             case 'Renuncia':
                 return redirect()->to('solicitud/admin/admrenuncia');
                 break;
+            case 'Vacaciones':
+                return redirect()->to('solicitud/admin/admvacacion');
+                break;
             default:
-            return redirect()->to('solicitud/administrador');
+            return redirect()->to('solicitud/admin');
         }
     }
 

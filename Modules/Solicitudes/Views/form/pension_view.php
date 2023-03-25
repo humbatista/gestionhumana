@@ -120,6 +120,15 @@
                                         <?php endforeach;?>
                                     </select>
                                 </div>
+                                <div>
+                                    <label>Tipo Pension:</label>
+                                        <select name="tipo" class="form-control pension">
+                                            <option value="30 años en servicio">30 años en servicios</option>
+                                            <option value="25 años en servicio y 55 años de edad">25 años en servicio y 55 años de edad</option>
+                                            <option value="20 años en servicio y 60 años de edad">20 años en servicio y 60 años de edad</option>
+                                            <option value="20 años en servicio, sin importar la edad">20 años en servicio sin importar la edad</option>
+                                        </select>
+                                </div>
                             </div>
                 </div>
                 <div class="modal-footer">

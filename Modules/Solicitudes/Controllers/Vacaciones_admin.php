@@ -1,69 +1,102 @@
-<?php 
+<?php
 namespace Modules\Solicitudes\Controllers;
 
 use CodeIgniter\Controller;
-use CodeIgniter\I18n\Time;
 use Modules\Solicitudes\Models\Vacaciones_Model;
-use PhpParser\Node\Stmt\TryCatch;
 
-class Vacaciones extends Controller{
-
-    public function index(){
-        //echo('vacaciones');
+class Vacaciones_admin extends Controller{
+    public function loadRecord(){
         try {
-            $model = new Vacaciones_Model();
-            $data['vacaciones'] = $model->getbyDistrito(session('distrito'))->getResult();
+            //echo('hola');
+            $request = service('request');
+            $searchData= $request->getGet();
+
+            $search="";
+            if (isset($searchData) && isset($searchData['search'])) {
+                $search = $searchData['search'];
+            }
+
+            //obtener los datos
+
+            $users = new Vacaciones_Model();
+    
+            if ($search=='') {
+                $paginateData = $users->where(['status !=' => 'Aprobada'])
+                    ->paginate(5);
+            } else {
+                $paginateData = $users->select('*')
+                    ->orlike('distrito', $search)
+                    ->orlike('empleado', $search)
+                    //->orlike('apellido', $search)
+                    ->orlike('cedula', $search)
+                    ->paginate(5);
+            }
+
+            $data = [
+                'users' => $paginateData,
+                'pager' => $users->pager,
+                'search' => $search
+            ];
             echo view('Modules\Solicitudes\Views\header\head');
             echo view('Modules\Solicitudes\Views\header\header');
-            echo view('Modules\Solicitudes\Views\menu\menu-horizontal');
-            echo view('Modules\Solicitudes\Views\form\vacaciones_view', $data);
+            echo view('Modules\Solicitudes\Views\menu\menu_admin');
+            echo view('Modules\Solicitudes\Views\menu\sidebaradmin');
+            echo view('Modules\Solicitudes\Views\admin\vacacion_admin', $data);
             echo view('Modules\Solicitudes\Views\header\footer');
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+    }
+
+    //estas funciones sirven para cambiar el status de las vacaciones 
+    // hay 4 funciones que son aprobar, aceptar, devolver y rechazar
+
+    public function aprobar(){
+        try {
+            //code...
+            $model = new Vacaciones_Model();
+            $id = $this->request->getPost('valor');
+            $model->aprobar($id);
         } catch (\Throwable $th) {
             throw $th;
         }
         
     }
 
-    public function admin(){
-       try {
-        $model = new Vacaciones_Model();
-        $data['vacaciones'] = $model->getbyDistrito(session('distrito'))->getResult();
-        echo view('Modules\Solicitudes\Views\header\head');
-        echo view('Modules\Solicitudes\Views\header\header');
-        echo view('Modules\Solicitudes\Views\menu\menu_admin');
-        echo view('Modules\Solicitudes\Views\menu\sidebaradmin');
-        echo view('Modules\Solicitudes\Views\form\vacaciones_view', $data);
-        echo view('Modules\Solicitudes\Views\header\footer');
-       } catch (\Throwable $th) {
-        throw $th;
-       }
-    }
-
-    public function save()
-    {
+    public function aceptar(){
         try {
-            $time = new Time('now');
+            //code...
             $model = new Vacaciones_Model();
-            $data = array(
-                'empleado' => $this->request->getPost('empleado'),
-                'cedula' => $this->request->getPost('cedula'),
-                'distrito' => session('distrito'),
-                'periodo' => $this-> request->getPost('periodo'),
-                'fecha_inicio' => $this-> request->getPost('fecha_inicio'),
-                'fecha_fin' => $this-> request->getPost('fecha_fin'),
-                'centro_educativo' => $this-> request->getPost('search'),
-                'usuario' => session('usuario'),
-                'status' => 'Enviada',
-                'activa' => 'SI',
-                'fecha' => $time,
-            );
-            $model->save($data);
-            if (session('type')=='A')
-                return redirect()->to('solicitud/admin/vacaciones');
-            else return redirect()->to('solicitud/vacaciones');
+            $id = $this->request->getPost('id');
+            $model->aceptar($id);
         } catch (\Throwable $th) {
             throw $th;
         }
+        
+    }
+
+    public function devolver(){
+        try {
+            //code...
+            $model = new Vacaciones_Model();
+            $id = $this->request->getPost('id');
+            $model->devolver($id);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+        
+    }
+
+    public function rechazar(){
+        try {
+            //code...
+            $model = new Vacaciones_Model();
+            $id = $this->request->getPost('id');
+            $model->rechazar($id);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+        
     }
 
 
@@ -71,7 +104,7 @@ class Vacaciones extends Controller{
         try {
             //code...
             $model = new Vacaciones_Model();
-            $record = $model->getReporte(session('distrito'))->getResult();
+            $record = $model->getVacacionesActivas()->getResult();
             //$total = $model->countAll();
             $phpWord = new \PhpOffice\PhpWord\PhpWord();
             $propiedades = $phpWord->getDocInfo();

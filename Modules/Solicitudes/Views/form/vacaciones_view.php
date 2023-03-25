@@ -8,7 +8,7 @@
   <h3 style="text-align: center; margin-bottom: 20px;">Vacaciones</h3>
       <br/>
       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal">Nuevo Registro</button>
-      <a href="<?php echo base_url('solicitud/exclusion_export'); ?>" class="btn btn-success">General Reporte para enviar</a>
+      <a href="<?php echo base_url('solicitud/vacaciones_export'); ?>" class="btn btn-success">General Reporte para enviar</a>
       <div class="table-responsive sm">
           <table class="table table-striped">
               <thead>
@@ -173,7 +173,7 @@
                     <div id="observaciones">
                         <script>
                             function funcionobs (valor) {
-                                var type = 'Exclusion';
+                                var type = 'Vacaciones';
                                 //alert('esto es una funcion')
                                 $.ajax({
                                     url: "<?php echo base_url('solicitud/buscar'); ?>",

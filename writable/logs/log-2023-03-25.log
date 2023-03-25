@@ -1,0 +1,27 @@
+CRITICAL - 25-03-2023 08:11:57 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 25-03-2023 08:32:46 --> syntax error, unexpected ','
+#0 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Solicit...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Solicit...')
+#3 [internal function]: spl_autoload_call('Modules\\Solicit...')
+#4 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Solici...', true)
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 25-03-2023 08:34:20 --> syntax error, unexpected ','
+#0 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Solicit...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Solicit...')
+#3 [internal function]: spl_autoload_call('Modules\\Solicit...')
+#4 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Solici...', true)
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

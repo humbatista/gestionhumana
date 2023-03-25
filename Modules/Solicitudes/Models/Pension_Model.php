@@ -9,7 +9,7 @@ class Pension_Model extends Model{
     protected $primaryKey = 'idpension';
 
     protected $allowedFields = ['fecha_solicitud', 'nombre','apellido','cedula',
-    'telefono', 'usuario', 'centro_educativo','puesto','area','distrito', 'status','activa'];
+    'telefono', 'usuario', 'centro_educativo','puesto','area','tipo','distrito', 'status','activa'];
 
     public function getPension()
     {

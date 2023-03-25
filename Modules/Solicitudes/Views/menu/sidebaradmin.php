@@ -8,6 +8,7 @@
   <a href= "<?= base_url('solicitud/admin/admlicencia')?>" class="w3-bar-item w3-button w3-mobile">Licencias y Permisos</a>
   <a href= "<?= base_url('solicitud/admin/admrenuncia')?>" class="w3-bar-item w3-button w3-mobile">Renuncias y Abandonos</a>
   <a href= "<?= base_url('solicitud/admin/admaccion')?>" class="w3-bar-item w3-button w3-mobile">Accion de Personal</a>
+  <a href= "<?= base_url('solicitud/admin/admvacacion')?>" class="w3-bar-item w3-button w3-mobile">Solicitud Vacaciones</a>
   <a href= "<?= base_url('solicitud/admin/usuario')?>" class="w3-bar-item w3-button w3-mobile">Usuario</a>
   <a href= "<?= base_url('solicitud/admin/centros')?>" class="w3-bar-item w3-button w3-mobile">Centros Educativos</a>
   <a href= "<?= base_url('solicitud/reporte/pension')?>" class="w3-bar-item w3-button w3-mobile">Reporte Pensiones</a>
