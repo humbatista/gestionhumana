@@ -6,6 +6,6 @@
           <a href="<?php echo base_url('solicitud/admin/licencia') ?>" class="w3-bar-item w3-button w3-mobile">Permisos y Licencias</a>
           <a href="<?php echo base_url('solicitud/admin/renuncia') ?>" class="w3-bar-item w3-button w3-mobile">Abandono y Renuncia</a>
           <a href="<?php echo base_url('solicitud/admin/accion') ?>" class="w3-bar-item w3-button w3-mobile">Accion de Personal</a>
-          <!-- <a href="<?php //echo base_url('solicitud/admin/vacaciones') ?>" class="w3-bar-item w3-button w3-mobile">Vacaciones</a> -->
+          <a href="<?php echo base_url('solicitud/admin/desvinculacion') ?>" class="w3-bar-item w3-button w3-mobile">Desvinculacion</a>
           <a href="<?php echo base_url('/salir') ?>" class="w3-bar-item w3-button w3-mobile">Salir</a>
      </div>

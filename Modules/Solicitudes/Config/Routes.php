@@ -39,6 +39,8 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->get('centro_ajaxsearch', '\Modules\Solicitudes\Controllers\AjaxSearchControllers::ajaxsearch');
         $routes->get('buscar', '\Modules\Solicitudes\Controllers\ObservacionControllers::buscar');
         $routes->post('buscar', '\Modules\Solicitudes\Controllers\ObservacionControllers::buscar');
+        $routes->get('desvinculacion', '\Modules\Solicitudes\Controllers\Desvinculacion::index');
+        $routes->get('desvinculacion/save', '\Modules\Solicitudes\Controllers\Desvinculacion::save');
         
         
     });
@@ -80,6 +82,9 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->post('exclusion/save', '\Modules\Solicitudes\Controllers\Exclusion::save');
         $routes->get('licencia', '\Modules\Solicitudes\Controllers\Licencia::admin');
         $routes->get('renuncia', '\Modules\Solicitudes\Controllers\Renuncia::admin');
+        $routes->get('desvinculacion', '\Modules\Solicitudes\Controllers\Desvinculacion::index');
+        $routes->post('desvinculacion/save', '\Modules\Solicitudes\Controllers\Desvinculacion::save');
+        $routes->post('desvinculacion/update', '\Modules\Solicitudes\Controllers\Desvinculacion::update');
         $routes->post('renuncia/save', '\Modules\Solicitudes\Controllers\Renuncia::save');
         $routes->get('accion', '\Modules\Solicitudes\Controllers\Accionpersonal::admin');
         $routes->post('accionpersonal/save', '\Modules\Solicitudes\Controllers\Accionpersonal::save');
