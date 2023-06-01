@@ -45,7 +45,8 @@ class Empleados_insert extends BaseController{
             'encargado' => $this->request->getPost('encargado'),
             'fecingreso'  => $this->request->getPost('fecingreso'),
             'creado' => session('usuario'),
-            'feccreado'  => $time
+            'feccreado'  => $time,
+            'estado' => 'A'
         );
         $model->save($data);
         return redirect()->to('empleados/');

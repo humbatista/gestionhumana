@@ -1,0 +1,34 @@
+CRITICAL - 30-03-2023 18:00:41 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 30-03-2023 18:01:00 --> Column 'centro_educativo' cannot be null
+CRITICAL - 30-03-2023 18:01:00 --> Column 'centro_educativo' cannot be null
+#0 C:\xampp\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\gestionhumana\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Models\Pension_Model.php(49): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pension.php(63): Modules\Solicitudes\Models\Pension_Model->savePension(Array)
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pension->save()
+#7 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pension))
+#8 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 30-03-2023 18:01:07 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 30-03-2023 18:02:08 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
