@@ -17,9 +17,9 @@
                         <th>Fecha Entregada</th>
                         <th>Nombre</th>
                         <th>Cedula</th>
-                        <th>Centro Educativo</th>
                         <th>Puesto</th>
                         <th>Telefono</th>
+                        <th>Status</th>
                         <th>Estado</th>
                         <th>Acción</th>
                     </tr>
@@ -43,8 +43,8 @@
                         <td><?= $row->fecha_entrega;?></td>
                         <td><?= $row->nombre;?></td>
                         <td><?= $row->cedula;?></td>
-                        <td><?= $row->centro_educativo;?></td>
                         <td><?= $row->puesto;?></td>
+                        <td><?= $row->telefono;?></td>
                         <td><?= $row->status;?></td>
                         <td><i class='fa fa-circle <?php echo $semaforo; ?>'></i></td>
                         <td>
@@ -52,7 +52,7 @@
                             <a href="#" class="btn btn-edit btn-info btn-sm" data-id="<?= $row->id;?>" data-nombre="<?= $row->nombre; ?>" 
                             data-cedula="<?= $row->cedula; ?>" data-centro="<?= $row->centro_educativo; ?>" data-fecha_entrada="<?= $row->fecha_entrada?>"
                             data-fecha_salida="<?= $row->fecha_salida;?>" data-telefono="<?= $row->telefono;?>" data-lugar="<?= $row->lugar?>"
-                            data-fecha_salida="<?= $row->fecha_salida;?>" data-telefono="<?= $row->telefono;?>" data-lugar="<?= $row->lugar?>" >Editar</a>
+                            data-fecha_entrega="<?= $row->fecha_entrega;?>" data-puesto="<?= $row->puesto;?>"  >Editar</a>
                             <a href="#" class="btn btn-danger btn-sm btn-delete" data-id="<?= $row->id;?>">Borrar</a>
                         </td>
                     </tr>
@@ -165,7 +165,7 @@
                                         <?php foreach($centro as $row):?>
                                             <option value="<?= $row->escuela_id;?>">(<?= $row->codigo;?>) <?= $row->nombre_escuela;?></option>
                                         <?php endforeach;?>
-                                    </select>
+                                </select>
                                 </div>
                             </div>
                             <div class="row">
@@ -200,6 +200,7 @@
                             </div>     
                         </div>
                         <div class="modal-footer">
+                            <input type="hidden" name="id" class="id id">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                             <button type="submit" class="btn btn-primary">Guardar</button>
                         </div>

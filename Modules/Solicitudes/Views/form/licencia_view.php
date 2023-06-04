@@ -197,7 +197,7 @@
                                         <?php foreach($centro as $row):?>
                                             <option value="<?= $row->escuela_id;?>">(<?= $row->codigo;?>) <?= $row->nombre_escuela;?></option>
                                         <?php endforeach;?>
-                                    </select>
+                                </select>
                               </div>
                               <div class="col-sm">
                                   <label>Cargo:</label>

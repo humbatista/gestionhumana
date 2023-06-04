@@ -40,7 +40,8 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->get('buscar', '\Modules\Solicitudes\Controllers\ObservacionControllers::buscar');
         $routes->post('buscar', '\Modules\Solicitudes\Controllers\ObservacionControllers::buscar');
         $routes->get('desvinculacion', '\Modules\Solicitudes\Controllers\Desvinculacion::index');
-        $routes->get('desvinculacion/save', '\Modules\Solicitudes\Controllers\Desvinculacion::save');
+        $routes->post('desvinculacion/save', '\Modules\Solicitudes\Controllers\Desvinculacion::save');
+        $routes->post('desvinculacion/update', '\Modules\Solicitudes\Controllers\Desvinculacion::update');
         
         
     });
@@ -73,6 +74,7 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->get('admaccion/export', '\Modules\Solicitudes\Controllers\Accionpersonal_admin::export');
         $routes->get('admvacacion', '\Modules\Solicitudes\Controllers\Vacaciones_admin::loadRecord');
         $routes->get('admvacacion/export', '\Modules\Solicitudes\Controllers\Vacaciones_admin::export');
+        $routes->get('admdesvinculacion', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::loadRecord');
         
         $routes->get('pension', '\Modules\Solicitudes\Controllers\Pension::admin');
         $routes->post('pension/save', '\Modules\Solicitudes\Controllers\Pension::save');
@@ -82,7 +84,7 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->post('exclusion/save', '\Modules\Solicitudes\Controllers\Exclusion::save');
         $routes->get('licencia', '\Modules\Solicitudes\Controllers\Licencia::admin');
         $routes->get('renuncia', '\Modules\Solicitudes\Controllers\Renuncia::admin');
-        $routes->get('desvinculacion', '\Modules\Solicitudes\Controllers\Desvinculacion::index');
+        $routes->get('desvinculacion', '\Modules\Solicitudes\Controllers\Desvinculacion::admin');
         $routes->post('desvinculacion/save', '\Modules\Solicitudes\Controllers\Desvinculacion::save');
         $routes->post('desvinculacion/update', '\Modules\Solicitudes\Controllers\Desvinculacion::update');
         $routes->post('renuncia/save', '\Modules\Solicitudes\Controllers\Renuncia::save');
@@ -123,6 +125,10 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->post('vacacion/aceptar', '\Modules\Solicitudes\Controllers\Vacaciones_admin::aceptar');
         $routes->post('vacacion/devolver', '\Modules\Solicitudes\Controllers\Vacaciones_admin::devolver');
         $routes->post('vacacion/rechazar', '\Modules\Solicitudes\Controllers\Vacaciones_admin::rechazar');
+        $routes->post('admdesvinculacion/enviada', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::enviada');
+        $routes->post('admdesvinculacion/recibida', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::recibida');
+        $routes->post('admdesvinculacion/entregada', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::entregada');
+        $routes->post('admdesvinculacion/solicitada', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::solicitada');;
     });
 
     $routes->group('solicitud/reporte', function ($routes) {;
