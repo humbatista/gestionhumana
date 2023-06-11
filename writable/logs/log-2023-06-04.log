@@ -1,0 +1,134 @@
+CRITICAL - 04-06-2023 06:48:02 --> Undefined index: apellido
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Views\admin\desvinculacion_admin_view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(55): view('Modules\\Solicit...', Array)
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->loadRecord()
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#7 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 04-06-2023 06:49:06 --> Undefined index: idpension
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Views\admin\desvinculacion_admin_view.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(55): view('Modules\\Solicit...', Array)
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->loadRecord()
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#7 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 04-06-2023 08:39:05 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:39:36 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:39:45 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:42:00 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:43:06 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:45:20 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:45:25 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:46:52 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:46:55 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:47:09 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:47:57 --> Call to undefined method Modules\Solicitudes\Models\Desvinculacion_Model::solicitada
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Desvinculacion_admin.php(82): CodeIgniter\Model->__call('solicitada', Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Desvinculacion_admin->solicitada()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Desvinculacion_admin))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:57:11 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 08:59:36 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 04-06-2023 19:36:27 --> include_once(inc/func.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\gestionhumana\Modules\SGS\Views\solicitud.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(in...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\gestionhumana\Modules\SGS\Views\solicitud.php(40): include_once()
+#2 C:\xampp\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\SGS\\Vie...', Array, true)
+#5 C:\xampp\htdocs\gestionhumana\Modules\SGS\Controllers\Solicitud.php(11): view('Modules\\SGS\\Vie...')
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\SGS\Controllers\Solicitud->index()
+#7 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\SGS\Controllers\Solicitud))
+#8 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 04-06-2023 19:42:47 --> Invalid file: Modules\SGS\Views\func.php
+#0 C:\xampp\htdocs\gestionhumana\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\SGS\\Vie...')
+#1 C:\xampp\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\SGS\\Vie...', Array, true)
+#2 C:\xampp\htdocs\gestionhumana\Modules\SGS\Controllers\Solicitud.php(11): view('Modules\\SGS\\Vie...')
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\SGS\Controllers\Solicitud->index()
+#4 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\SGS\Controllers\Solicitud))
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
