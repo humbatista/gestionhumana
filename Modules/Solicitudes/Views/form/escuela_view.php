@@ -28,11 +28,11 @@
             <?php foreach($escuela as $row):?>
                 <tr>
                     <td><?= $row->escuela_id;?></td>
-                    <td><?= $row->codigo;?></td>
+                    <td><?= $row->codigo_id;?></td>
                     <td><?= $row->nombre_escuela;?></td>
                     <td><?= $row->distrito_id;?></td>
                     <td>
-                        <a href="#" class="btn btn-info btn-sm btn-edit" data-id="<?= $row->escuela_id;?>" data-codigo="<?= $row->codigo;?>" 
+                        <a href="#" class="btn btn-info btn-sm btn-edit" data-id="<?= $row->escuela_id;?>" data-codigo_id="<?= $row->codigo_id;?>" 
                         data-name="<?= $row->nombre_escuela;?>" data-distrito_id="<?= $row->distrito;?>">Editar</a>
                         <a href="#" class="btn btn-danger btn-sm btn-delete" data-id="<?= $row->escuela_id;?>">Borrar</a>
                     </td>
@@ -137,7 +137,7 @@
 
                 <div class="form-group">
                     <label>Codigo</label>
-                    <input type="text" class="form-control codigo" name="codigo" placeholder="codigo de centro">
+                    <input type="text" class="form-control codigo_id" name="codigo_id" placeholder="codigo de centro">
                 </div>
                  
                 <div class="form-group">
@@ -199,12 +199,12 @@
         $('.btn-edit').on('click',function(){
             // get data from button edit
             const id = $(this).data('id');
-            const id = $(this).data('id');
+            const codigo_id = $(this).data('codigo_id');
             const name = $(this).data('name');
             const distrito = $(this).data('distrito_id');
             // Set data to Form Edit
             $('.escuela_id').val(id);
-            $('.codigo').val(codigo);
+            $('.codigo_id').val(codigo_id);
             $('.nombre_escuela').val(name);
             $('.distrito').val(distrito).trigger('change');
             // Call Modal Edit

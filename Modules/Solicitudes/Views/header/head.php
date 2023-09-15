@@ -7,7 +7,7 @@
     <meta name="description" content="Sistema de Solicitudes Gestion Humana">
     <meta name="author" content="Humberto Batista">
     <meta name="robots" content="noindex, nofollow">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
     
     <link rel="icon" href="<?php echo base_url("/public/assets/img/logo.png"); ?>">
     <title>Solicitudes Gestion Humana</title>
@@ -47,7 +47,7 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"> -->
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
      <script type="text/javascript" src="<?php echo base_url('/public/assets/js/jquery.min.js');?>"></script>
     <!-- Optional JavaScript -->

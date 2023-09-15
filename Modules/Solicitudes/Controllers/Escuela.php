@@ -62,7 +62,7 @@ class Escuela extends Controller{
     {
         $model = new Escuela_Model();
         $data = array(
-            'codigo'       => $this->request->getPost('codigo'),
+            'codigo_id'       => $this->request->getPost('codigo'),
             'dependencia'  => $this->request->getPost('dependencia'),
             'nombre_escuela'        => $this->request->getPost('nombre_escuela'),
             'distrito' => $this->request->getPost('distrito'),
@@ -79,7 +79,7 @@ class Escuela extends Controller{
         $id = $this->request->getPost('escuela_id');
         $data = array(
             'nombre_escuela'        => $this->request->getPost('nombre_escuela'),
-            'codigo'       => $this->request->getPost('codigo'),
+            'codigo_id'       => $this->request->getPost('codigo_id'),
             'distrito' => $this->request->getPost('distrito'),
         );
         $model->updateEscuela($data, $id);

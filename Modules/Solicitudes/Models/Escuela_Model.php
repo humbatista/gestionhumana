@@ -11,7 +11,7 @@ class Escuela_Model extends Model{
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['escuela_id','codigo', 'nombre_escuela', 'distrito'];
+    protected $allowedFields = ['escuela_id','codigo_id', 'nombre_escuela', 'distrito'];
 
     protected $validationRules    = [];
     protected $validationMessages = [];
