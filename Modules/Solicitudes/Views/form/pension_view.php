@@ -190,7 +190,7 @@
                                     <select name="centro" class="form-control centro">
                                         <option value="">-Select-</option>
                                         <?php foreach($centro as $row):?>
-                                            <option value="<?= $row->escuela_id;?>">(<?= $row->codigo;?>) <?= $row->nombre_escuela;?></option>
+                                            <option value="<?= $row->escuela_id;?>">(<?= $row->codigo_id;?>) <?= $row->nombre_escuela;?></option>
                                         <?php endforeach;?>
                                     </select>
                                 </div>

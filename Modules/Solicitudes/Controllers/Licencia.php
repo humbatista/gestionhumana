@@ -12,87 +12,110 @@ use PhpOffice\PhpWord\Style\Language;
 class Licencia extends Controller{
 
     public function index(){
-        $model = new Licencia_Model();
-        $centro = new Escuela_Model();
-        $tipo = new Tipo_Licencia_Model();
-        $data['tipo'] = $tipo->findAll();
-        $data['centro'] = $centro->getEscuelaDistrito(session('distrito'))->getResult();
-        $data['licencia'] = $model->where('distrito', session('distrito'))
-                                ->where('activa', 'SI')
-                                ->Where('status !=', 'Aprobada')
-                                ->findAll();
-        echo view('Modules\Solicitudes\Views\header\head');
-        echo view('Modules\Solicitudes\Views\header\header');
-        echo view('Modules\Solicitudes\Views\menu\menu-horizontal');
-        echo view('Modules\Solicitudes\Views\form\licencia_view', $data);
-        echo view('Modules\Solicitudes\Views\header\footer');
+        try {
+            //code...
+            $model = new Licencia_Model();
+            $centro = new Escuela_Model();
+            $tipo = new Tipo_Licencia_Model();
+            $data['tipo'] = $tipo->findAll();
+            $data['centro'] = $centro->getEscuelaDistrito(session('distrito'))->getResult();
+            $data['licencia'] = $model->where('distrito', session('distrito'))
+                                    ->where('activa', 'SI')
+                                    ->Where('status !=', 'Aprobada')
+                                    ->findAll();
+            echo view('Modules\Solicitudes\Views\header\head');
+            echo view('Modules\Solicitudes\Views\header\header');
+            echo view('Modules\Solicitudes\Views\menu\menu-horizontal');
+            echo view('Modules\Solicitudes\Views\form\licencia_view', $data);
+            echo view('Modules\Solicitudes\Views\header\footer');
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+        
     }
     public function admin(){
-        $model = new Licencia_Model();
-        $centro = new Escuela_Model();
-        $tipo = new Tipo_Licencia_Model();
-        $data['tipo'] = $tipo->findAll();
-        $data['centro'] = $centro->getEscuelaDistrito(session('distrito'))->getResult();
-        $data['licencia'] = $model->where('distrito', session('distrito'))
-                                    ->where('activa','SI')
-                                    ->Where('status !=', 'Aprobada')
-                                  ->findAll();
-        echo view('Modules\Solicitudes\Views\header\head');
-        echo view('Modules\Solicitudes\Views\header\header');
-        echo view('Modules\Solicitudes\Views\menu\menu_admin');
-        echo view('Modules\Solicitudes\Views\menu\sidebaradmin');
-        echo view('Modules\Solicitudes\Views\form\licencia_view', $data);
-        echo view('Modules\Solicitudes\Views\header\footer');
+        try {
+            //code...
+            $model = new Licencia_Model();
+            $centro = new Escuela_Model();
+            $tipo = new Tipo_Licencia_Model();
+            $data['tipo'] = $tipo->findAll();
+            $data['centro'] = $centro->getEscuelaDistrito(session('distrito'))->getResult();
+            $data['licencia'] = $model->where('distrito', session('distrito'))
+                                        ->where('activa','SI')
+                                        ->Where('status !=', 'Aprobada')
+                                    ->findAll();
+            echo view('Modules\Solicitudes\Views\header\head');
+            echo view('Modules\Solicitudes\Views\header\header');
+            echo view('Modules\Solicitudes\Views\menu\menu_admin');
+            echo view('Modules\Solicitudes\Views\menu\sidebaradmin');
+            echo view('Modules\Solicitudes\Views\form\licencia_view', $data);
+            echo view('Modules\Solicitudes\Views\header\footer');
+        } catch (\Throwable $th) {
+            throw $th;
+        }
     }
 
     public function save()
     {
-        $time = $myTime = new Time('now');
-        $model = new Licencia_Model();
-        $data = array(
-            'nombres' => $this->request->getPost('nombres'),
-            'cedula' => $this->request->getPost('cedula'),
-            'tipo_licencia' => $this->request->getPost('tipo'),
-            'dias' => $this-> request->getPost('dias'),
-            'fechaini' => $this-> request->getPost('fechaini'),
-            'fechafin' => $this-> request->getPost('fechafin'),
-            'centro_educativo' => $this-> request->getPost('search'),
-            'nombre_suplente' => $this->request->getPost('nombre_suplente'),
-            'cedula_suplente' => $this->request->getPost('cedula_suplente'),
-            'cargo' => $this->request->getPost('cargo'),
-            'usuario' => session('usuario'),
-            'distrito' => session('distrito'),
-            'fecha'        => $time,
-            'activa' => 'SI',
-        );
-        $model->save($data);
+        try {
+            //code...
+            $time = $myTime = new Time('now');
+            $model = new Licencia_Model();
+            $data = array(
+                'nombres' => $this->request->getPost('nombres'),
+                'cedula' => $this->request->getPost('cedula'),
+                'tipo_licencia' => $this->request->getPost('tipo'),
+                'dias' => $this-> request->getPost('dias'),
+                'fechaini' => $this-> request->getPost('fechaini'),
+                'fechafin' => $this-> request->getPost('fechafin'),
+                'centro_educativo' => $this-> request->getPost('search'),
+                'nombre_suplente' => $this->request->getPost('nombre_suplente'),
+                'cedula_suplente' => $this->request->getPost('cedula_suplente'),
+                'cargo' => $this->request->getPost('cargo'),
+                'usuario' => session('usuario'),
+                'distrito' => session('distrito'),
+                'fecha'        => $time,
+                'activa' => 'SI',
+            );
+            $model->save($data);
+            
+            
+            if (session('type')=='A')
+                return redirect()->to('solicitud/admin/licencia');
+            else return redirect()->to('solicitud/licencia');
+        } catch (\Throwable $th) {
+            throw $th;
+        }
         
-        
-        if (session('type')=='A')
-            return redirect()->to('solicitud/admin/licencia');
-        else return redirect()->to('solicitud/licencia');
     }
  
     public function update()
     {
-        $time = $myTime = new Time('now');
-        $model = new Licencia_Model();
-        $id = $this->request->getPost('id');
-        $data = array(
-            'nombres' => $this->request->getPost('nombres'),
-            'cedula' => $this->request->getPost('cedula'),
-            'tipo_de_licencia' => $this->request->getPost('tipo_licencia'),
-            'dias' => $this-> request->getPost('dias'),
-            'fechaini' => $this-> request->getPost('fechaini'),
-            'fechafin' => $this-> request->getPost('fechafin'),
-            'centro_educativo' => $this-> request->getPost('centro'),
-            'nombre_suplente' => $this->request->getPost('nombre_suplente'),
-            'cedula_suplente' => $this->request->getPost('cedula_suplente'),
-            'modificado' => session('usuario'),
-            'fecmodificado' => $time,
-        );
-        $model->update($id, $data);
-        return redirect()->to('solicitud/licencia');
+        try {
+            //code...
+            $time = $myTime = new Time('now');
+            $model = new Licencia_Model();
+            $id = $this->request->getPost('id');
+            $data = array(
+                'nombres' => $this->request->getPost('nombres'),
+                'cedula' => $this->request->getPost('cedula'),
+                'tipo_de_licencia' => $this->request->getPost('tipo_licencia'),
+                'dias' => $this-> request->getPost('dias'),
+                'fechaini' => $this-> request->getPost('fechaini'),
+                'fechafin' => $this-> request->getPost('fechafin'),
+                'centro_educativo' => $this-> request->getPost('centro'),
+                'nombre_suplente' => $this->request->getPost('nombre_suplente'),
+                'cedula_suplente' => $this->request->getPost('cedula_suplente'),
+                'modificado' => session('usuario'),
+                'fecmodificado' => $time,
+            );
+            $model->update($id, $data);
+            return redirect()->to('solicitud/licencia');
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+        
     }
  
     public function delete()
