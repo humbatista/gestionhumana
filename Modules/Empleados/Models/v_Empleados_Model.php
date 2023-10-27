@@ -16,3 +16,17 @@ class v_Empleados_Model extends Model{
         return $builder->get();
     }
 }
+
+/*select `e`.`codigo` AS `codigo`,`e`.`nombre` AS `nombre`,
+`e`.`apellido` AS `apellido`,`e`.`cedula` AS `cedula`,
+`e`.`telefono` AS `telefono`,`e`.`fecnacimiento` AS `fecnacimiento`,
+`c`.`descripcion` AS `cargo`,`f`.`descripcion` AS `funcion`,
+`u`.`descripcion` AS `unidad`,`e`.`fecingreso` AS `fecingreso`,
+(select 'SI' AS `vacaciones` from `actadb`.`app_disfrute` 
+where curdate() <= `actadb`.`app_disfrute`.`fecha_fin` 
+and `actadb`.`app_disfrute`.`fecha_inicio` <= curdate() 
+and `actadb`.`app_disfrute`.`empleado` = `e`.`codigo`) 
+AS `vacaciones` from (((`actadb`.`app_empleados` `e` join `actadb`.`app_cargo` `c`) 
+join `actadb`.`app_unidad` `u`) join `actadb`.`app_funciones` `f`)
+ where `e`.`cargo` = `c`.`codigo` and `e`.`unidad` = `u`.`codigo` 
+ and `e`.`funciones` = `f`.`id` and `e`.`estado` = 'A' order by 11 desc */
