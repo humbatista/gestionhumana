@@ -15,6 +15,7 @@ declare(strict_types=1);
 namespace PhpCsFixer\Fixer\FunctionNotation;
 
 use PhpCsFixer\AbstractPhpdocToTypeDeclarationFixer;
+use PhpCsFixer\DocBlock\Annotation;
 use PhpCsFixer\FixerDefinition\CodeSample;
 use PhpCsFixer\FixerDefinition\FixerDefinition;
 use PhpCsFixer\FixerDefinition\FixerDefinitionInterface;
@@ -29,10 +30,12 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class PhpdocToReturnTypeFixer extends AbstractPhpdocToTypeDeclarationFixer
 {
+    private const TYPE_CHECK_TEMPLATE = '<?php function f(): %s {}';
+
     /**
      * @var array<int, array<int, int|string>>
      */
-    private $excludeFuncNames = [
+    private array $excludeFuncNames = [
         [T_STRING, '__construct'],
         [T_STRING, '__destruct'],
         [T_STRING, '__clone'],
@@ -41,19 +44,15 @@ final class PhpdocToReturnTypeFixer extends AbstractPhpdocToTypeDeclarationFixer
     /**
      * @var array<string, true>
      */
-    private $skippedTypes = [
-        'mixed' => true,
+    private array $skippedTypes = [
         'resource' => true,
         'null' => true,
     ];
 
-    /**
-     * {@inheritdoc}
-     */
     public function getDefinition(): FixerDefinitionInterface
     {
         return new FixerDefinition(
-            'EXPERIMENTAL: Takes `@return` annotation of non-mixed types and adjusts accordingly the function signature. Requires PHP >= 7.0.',
+            'EXPERIMENTAL: Takes `@return` annotation of non-mixed types and adjusts accordingly the function signature.',
             [
                 new CodeSample(
                     '<?php
@@ -65,16 +64,11 @@ function f1()
 /** @return void */
 function f2()
 {}
-'
-                ),
-                new VersionSpecificCodeSample(
-                    '<?php
 
 /** @return object */
 function my_foo()
 {}
 ',
-                    new VersionSpecification(70200)
                 ),
                 new CodeSample(
                     '<?php
@@ -97,7 +91,7 @@ final class Foo {
     }
 }
 ',
-                    new VersionSpecification(80000)
+                    new VersionSpecification(8_00_00)
                 ),
             ],
             null,
@@ -105,23 +99,16 @@ final class Foo {
         );
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function isCandidate(Tokens $tokens): bool
     {
-        if (\PHP_VERSION_ID >= 70400 && $tokens->isTokenKindFound(T_FN)) {
-            return true;
-        }
-
-        return $tokens->isTokenKindFound(T_FUNCTION);
+        return $tokens->isAnyTokenKindsFound([T_FUNCTION, T_FN]);
     }
 
     /**
      * {@inheritdoc}
      *
-     * Must run before FullyQualifiedStrictTypesFixer, NoSuperfluousPhpdocTagsFixer, PhpdocAlignFixer, ReturnTypeDeclarationFixer.
-     * Must run after AlignMultilineCommentFixer, CommentToPhpdocFixer, PhpdocIndentFixer, PhpdocScalarFixer, PhpdocScalarFixer, PhpdocToCommentFixer, PhpdocTypesFixer, PhpdocTypesFixer.
+     * Must run before FullyQualifiedStrictTypesFixer, NoSuperfluousPhpdocTagsFixer, PhpdocAlignFixer, ReturnToYieldFromFixer, ReturnTypeDeclarationFixer.
+     * Must run after AlignMultilineCommentFixer, CommentToPhpdocFixer, PhpdocIndentFixer, PhpdocScalarFixer, PhpdocToCommentFixer, PhpdocTypesFixer.
      */
     public function getPriority(): int
     {
@@ -133,20 +120,10 @@ final class Foo {
         return isset($this->skippedTypes[$type]);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function applyFix(\SplFileInfo $file, Tokens $tokens): void
     {
-        if (\PHP_VERSION_ID >= 80000) {
-            unset($this->skippedTypes['mixed']);
-        }
-
         for ($index = $tokens->count() - 1; 0 < $index; --$index) {
-            if (
-                !$tokens[$index]->isGivenKind(T_FUNCTION)
-                && (\PHP_VERSION_ID < 70400 || !$tokens[$index]->isGivenKind(T_FN))
-            ) {
+            if (!$tokens[$index]->isGivenKind([T_FUNCTION, T_FN])) {
                 continue;
             }
 
@@ -161,18 +138,41 @@ final class Foo {
                 continue;
             }
 
-            $returnTypeAnnotation = $this->getAnnotationsFromDocComment('return', $tokens, $docCommentIndex);
-            if (1 !== \count($returnTypeAnnotation)) {
+            $returnTypeAnnotations = $this->getAnnotationsFromDocComment('return', $tokens, $docCommentIndex);
+            if (1 !== \count($returnTypeAnnotations)) {
                 continue;
             }
 
-            $typeInfo = $this->getCommonTypeFromAnnotation(current($returnTypeAnnotation), true);
+            /** @var Annotation $returnTypeAnnotation */
+            $returnTypeAnnotation = current($returnTypeAnnotations);
+
+            $typesExpression = $returnTypeAnnotation->getTypeExpression();
+
+            if (null === $typesExpression) {
+                continue;
+            }
+
+            $typeInfo = $this->getCommonTypeInfo($typesExpression, true);
+            $unionTypes = null;
 
             if (null === $typeInfo) {
+                $unionTypes = $this->getUnionTypes($typesExpression, true);
+            }
+
+            if (null === $typeInfo && null === $unionTypes) {
                 continue;
             }
 
-            [$returnType, $isNullable] = $typeInfo;
+            if (null !== $typeInfo) {
+                [$returnType, $isNullable] = $typeInfo;
+            } elseif (null !== $unionTypes) {
+                $returnType = $unionTypes;
+                $isNullable = false;
+            }
+
+            if (!isset($returnType, $isNullable)) {
+                continue;
+            }
 
             $startIndex = $tokens->getNextTokenOfKind($index, ['{', ';']);
 
@@ -180,7 +180,7 @@ final class Foo {
                 continue;
             }
 
-            if (!$this->isValidSyntax(sprintf('<?php function f():%s {}', $returnType))) {
+            if (!$this->isValidSyntax(sprintf(self::TYPE_CHECK_TEMPLATE, $returnType))) {
                 continue;
             }
 
@@ -197,6 +197,16 @@ final class Foo {
                 )
             );
         }
+    }
+
+    protected function createTokensFromRawType(string $type): Tokens
+    {
+        $typeTokens = Tokens::fromCode(sprintf(self::TYPE_CHECK_TEMPLATE, $type));
+        $typeTokens->clearRange(0, 7);
+        $typeTokens->clearRange(\count($typeTokens) - 3, \count($typeTokens) - 1);
+        $typeTokens->clearEmptyTokens();
+
+        return $typeTokens;
     }
 
     /**

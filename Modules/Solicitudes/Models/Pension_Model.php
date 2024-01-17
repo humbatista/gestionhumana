@@ -106,4 +106,11 @@ class Pension_Model extends Model{
              return $query;
         }
     }
+
+    public function getPensionbyId($id){
+        $this->select('*');
+        $this->where('idpension', $id);
+        $datos = $this->findAll();
+        return $datos;
+    }
 }

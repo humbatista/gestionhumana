@@ -42,6 +42,7 @@
                       <th>Centro Educativo</th>
                       <th>Area</th>
                       <th>Puesto</th>
+                      <th>Solicitud</th>
                   </tr>
               </thead>
               <tbody>
@@ -55,6 +56,7 @@
                       <td><?= $row->centro_educativo;?></td>
                       <td><?= $row->area;?></td>
                       <td><?= $row->puesto;?></td>
+                      <td><a href="#" ><i  class="fa fa-file" aria-hidden="true"></i> </a></td>
                   </tr>
               <?php endforeach;?>
               </tbody>

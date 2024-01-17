@@ -128,7 +128,8 @@ $routes->get('solicitudes', '\Modules\Solicitudes\Controllers\Solicitudes::index
         $routes->post('admdesvinculacion/enviada', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::enviada');
         $routes->post('admdesvinculacion/recibida', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::recibida');
         $routes->post('admdesvinculacion/entregada', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::entregada');
-        $routes->post('admdesvinculacion/solicitada', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::solicitada');;
+        $routes->post('admdesvinculacion/solicitada', '\Modules\Solicitudes\Controllers\Desvinculacion_admin::solicitada');
+        $routes->get('oficiopension/(:alphanum)', '\Modules\Solicitudes\Controllers\Pensiones_reporte::oficioPension/$1');
     });
 
     $routes->group('solicitud/reporte', function ($routes) {;

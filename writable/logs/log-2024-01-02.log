@@ -1,0 +1,54 @@
+CRITICAL - 02-01-2024 14:53:11 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 14:54:47 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 14:54:53 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 14:57:03 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 14:57:58 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 14:58:03 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 14:59:00 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 15:02:05 --> Class 'phpOffice\PhpWord\Style\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 02-01-2024 15:04:00 --> Class 'Modules\Solicitudes\Controllers\Language' not found
+#0 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension()
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

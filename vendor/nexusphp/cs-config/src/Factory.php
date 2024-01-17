@@ -26,10 +26,8 @@ final class Factory
 {
     /**
      * Current RulesetInterface instance.
-     *
-     * @var \Nexus\CsConfig\Ruleset\RulesetInterface
      */
-    private $ruleset;
+    private RulesetInterface $ruleset;
 
     /**
      * Array of resolved options.
@@ -37,7 +35,7 @@ final class Factory
      * @phpstan-var array{
      *     cacheFile: string,
      *     customFixers: iterable<\PhpCsFixer\Fixer\FixerInterface>,
-     *     finder: \PhpCsFixer\Finder|iterable<string>,
+     *     finder: \PhpCsFixer\Finder|iterable<\SplFileInfo>,
      *     format: string,
      *     hideProgress: bool,
      *     indent: string,
@@ -48,13 +46,13 @@ final class Factory
      *     rules: array<string, mixed>
      * }
      */
-    private $options;
+    private array $options;
 
     /**
      * @param array{
      *     cacheFile: string,
      *     customFixers: iterable<\PhpCsFixer\Fixer\FixerInterface>,
-     *     finder: \PhpCsFixer\Finder|iterable<string>,
+     *     finder: \PhpCsFixer\Finder|iterable<\SplFileInfo>,
      *     format: string,
      *     hideProgress: bool,
      *     indent: string,
@@ -79,7 +77,7 @@ final class Factory
      * @param array{
      *     cacheFile?: string,
      *     customFixers?: iterable<\PhpCsFixer\Fixer\FixerInterface>,
-     *     finder?: \PhpCsFixer\Finder|iterable<string>,
+     *     finder?: \PhpCsFixer\Finder|iterable<\SplFileInfo>,
      *     format?: string,
      *     hideProgress?: bool,
      *     indent?: string,
@@ -112,16 +110,16 @@ final class Factory
         ;
 
         // Resolve Config options
-        $options['cacheFile'] = $options['cacheFile'] ?? '.php-cs-fixer.cache';
-        $options['customFixers'] = $options['customFixers'] ?? [];
-        $options['finder'] = $options['finder'] ?? $defaultFinder;
-        $options['format'] = $options['format'] ?? 'txt';
-        $options['hideProgress'] = $options['hideProgress'] ?? false;
-        $options['indent'] = $options['indent'] ?? '    ';
-        $options['lineEnding'] = $options['lineEnding'] ?? "\n";
-        $options['phpExecutable'] = $options['phpExecutable'] ?? null;
+        $options['cacheFile'] ??= '.php-cs-fixer.cache';
+        $options['customFixers'] ??= [];
+        $options['finder'] ??= $defaultFinder;
+        $options['format'] ??= 'txt';
+        $options['hideProgress'] ??= false;
+        $options['indent'] ??= '    ';
+        $options['lineEnding'] ??= "\n";
+        $options['phpExecutable'] ??= null;
         $options['isRiskyAllowed'] = $options['isRiskyAllowed'] ?? ($ruleset->willAutoActivateIsRiskyAllowed() ?: false);
-        $options['usingCache'] = $options['usingCache'] ?? true;
+        $options['usingCache'] ??= true;
         $options['rules'] = array_merge($ruleset->getRules(), $overrides, $options['customRules'] ?? []);
 
         return new self($ruleset, $options);
@@ -141,7 +139,7 @@ final class Factory
 
         if ('' !== $email) {
             $email = trim($email, '<>');
-            $email = ' <' . $email . '>';
+            $email = ' <'.$email.'>';
         }
 
         $header = sprintf(
