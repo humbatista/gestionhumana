@@ -138,6 +138,23 @@ class Pensiones_reporte extends Controller{
         }
     }
 
+    public function getEscala($tipo){
+        switch ($tipo) {
+            case 1:
+                return "60% de su sueldo";
+                break;
+            case 2:
+                return "85% de su sueldo";
+                break;
+            case 3:
+                return "90% de su sueldo ";
+                break;
+            case 4:
+                return "100% de su sueldo ";
+                break;
+        }
+    }
+
     public function oficioPension($codigo){
         $phpWord = new \PhpOffice\PhpWord\PhpWord();
         $propiedades = $phpWord -> getDocInfo();
@@ -150,8 +167,15 @@ class Pensiones_reporte extends Controller{
         $propiedades -> setKeywords("documento, php, word");
 
         $model = new Pension_Model();
-        $datos = $model->where('idpension', $codigo)->first();
-        $distrito = $this->getDistrito($datos['distrito']);
+        $datos = $model->oficioPension($codigo)->getRow();
+        //$distrito = $datos->distrito;
+        $distrito = $this->getDistrito($datos->distrito);
+        $escala = $this->getEscala($datos->tipo_pension);
+        $nombre ='Humberto Francisco Batista Santos';
+        $cedula = '037-0066654-2';
+        $anio =55;
+        $edad = 25;
+        $sueldo = 35000;
 
         $section = $phpWord->addSection();
 
@@ -202,7 +226,7 @@ class Pensiones_reporte extends Controller{
         $textrun =$section->addTextRun('pStylerLeft');
         $textrun->addText(htmlspecialchars('Asunto                                              :Remisión solicitud Jubilación por antiguedad de la'),$fuente);
         $textrun->addTextBreak();
-        $textrun->addText(htmlspecialchars('                                                        Docente Rosa Lesbia Ossers Cabrera'),$fuente);
+        $textrun->addText(htmlspecialchars('                                                        Docente '.$datos->nombre.' '. $datos->apellido),$fuente);
 
 
         $textrun =$section->addTextRun('pStylerLeft');
@@ -221,12 +245,12 @@ class Pensiones_reporte extends Controller{
         $textrun =$section->addTextRun('pStylerLeft');
         $textrun->addText(htmlspecialchars('                                                     Muy respetuosamente, me dirijo a ese superior despacho, '),$fuente);
         $textrun->addText(htmlspecialchars('para remitirles la solicitud de Jubilación por antiguedad en el servicio del docente Licdo. '),$fuente);
-        $textrun->addText(htmlspecialchars($datos['nombre'].' '. $datos['apellido'].'., cédula de identidad No.'.$datos['cedula'].' de la Dirección Distrital '),$fuente);
+        $textrun->addText(htmlspecialchars($datos->nombre.' '. $datos->apellido.'., cédula de identidad No.'.$datos->cedula.' de la Dirección Distrital '),$fuente);
         $textrun->addText(htmlspecialchars($distrito.'.'),$fuente);
 
         $textrun =$section->addTextRun('pStylerLeft');
-        $textrun->addText(htmlspecialchars('                                                     El servidor público cumple con 25 años en servicio y 55 años de edad, '),$fuente);
-        $textrun->addText(htmlspecialchars('por lo que le solicita su jubilación conforme lo establecido por el Art. 11 de la Ley 451-08, que indica un 90% de su sueldo '),$fuente);
+        $textrun->addText(htmlspecialchars('                                                     El servidor público cumple con '.$datos->tipo.', '),$fuente);
+        $textrun->addText(htmlspecialchars('por lo que le solicita su jubilación conforme lo establecido por el Art. 11 de la Ley 451-08, que indica un '. $escala),$fuente);
         $textrun->addText(htmlspecialchars('en la referida escala de salario.'),$fuente);
         $textrun->addTextBreak();
 

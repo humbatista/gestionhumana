@@ -9,7 +9,7 @@ class Pension_Model extends Model{
     protected $primaryKey = 'idpension';
 
     protected $allowedFields = ['fecha_solicitud', 'nombre','apellido','cedula',
-    'telefono', 'usuario', 'centro_educativo','puesto','area','tipo','distrito', 'status','activa'];
+    'telefono', 'usuario', 'centro_educativo','puesto','area','tipo_pension','distrito', 'status','activa'];
 
     public function getPension()
     {
@@ -107,6 +107,15 @@ class Pension_Model extends Model{
         }
     }
 
+    public function oficioPension($id){
+             $query = $this->db->query("SELECT p.nombre, p.apellido, p.cedula, p.distrito, 
+             p.anio_inicio,'25000' sueldo, p.tipo_pension, t.tipo 
+             FROM t_pension p, t_tipo_pension t 
+             WHERE p.tipo_pension = t.id
+             And p.idpension= ?;", $id);
+             return $query;
+    }
+
     public function getPensionbyId($id){
         $this->select('*');
         $this->where('idpension', $id);
@@ -114,3 +123,7 @@ class Pension_Model extends Model{
         return $datos;
     }
 }
+
+//SELECT p.nombre, p.apellido, p.cedula, p.distrito, p.anio_inicio,'25000' sueldo, p.tipo_pension, t.tipo 
+//FROM t_pension p, t_tipo_pension t 
+//WHERE p.tipo_pension = t.id; 

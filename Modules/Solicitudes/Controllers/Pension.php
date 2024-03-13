@@ -8,6 +8,7 @@ use CodeIgniter\I18n\Time;
 use Modules\Solicitudes\Models\Pension_Model;
 use Modules\Solicitudes\Models\Escuela_Model;
 use Modules\Solicitudes\Models\Area_Model;
+use Modules\Solicitudes\Models\Tipo_Pension_Model;
 use PhpOffice\PhpWord\Style\Language;
 
 class Pension extends Controller{
@@ -15,8 +16,10 @@ class Pension extends Controller{
         $model = new Pension_Model();
         $centro = new Escuela_Model();
         $area = new Area_Model();
+        $tipo = new Tipo_Pension_Model();
         $data['centro'] = $centro->getEscuelaDistrito(session('distrito'))->getResult();
         $data['area']  = $area->getArea()->getResult();
+        $data['tipo'] = $tipo->getTipo()->getResult();
         $data['pension'] = $model->getbyDistrito(session('distrito'))->getResult();
         echo view('Modules\Solicitudes\Views\header\head');
         echo view('Modules\Solicitudes\Views\header\header');
@@ -28,8 +31,10 @@ class Pension extends Controller{
         $model = new Pension_Model();
         $centro = new Escuela_Model();
         $area = new Area_Model();
+        $tipo = new Tipo_Pension_Model();
         $data['centro'] = $centro->getEscuelaDistrito(session('distrito'))->getResult();
         $data['area']  = $area->getArea()->getResult();
+        $data['tipo'] = $tipo->getTipo()->getResult();
         $data['pension'] = $model->getbyDistrito(session('distrito'))->getResult();
         //$data['pension'] = $model->getPension()->getResult();
         echo view('Modules\Solicitudes\Views\header\head');
@@ -55,7 +60,7 @@ class Pension extends Controller{
             'centro_educativo' => $this-> request->getPost('search'),
             'puesto' => $this-> request->getPost('puesto'),
             'area' => $this-> request->getPost('area'),
-            'tipo' => $this-> request->getPost('tipo'),
+            'tipo_pension' => $this-> request->getPost('tipo'),
             'usuario' => session('usuario'),
             'distrito' => session('distrito'),
             'activa' => 'SI',

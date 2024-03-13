@@ -1,0 +1,58 @@
+CRITICAL - 23-02-2024 15:24:22 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php on line 22
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\AjaxSearchControllers.php(22): CodeIgniter\Database\BaseBuilder->like('nombre_escuela', NULL)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\AjaxSearchControllers->ajaxSearch()
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\AjaxSearchControllers))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 23-02-2024 16:41:57 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Solicit...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Solicit...')
+#3 [internal function]: spl_autoload_call('Modules\\Solicit...')
+#4 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Solici...', true)
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 23-02-2024 16:43:09 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\gestionhumana\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Modules\\Solicit...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Modules\\Solicit...')
+#3 [internal function]: spl_autoload_call('Modules\\Solicit...')
+#4 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(775): class_exists('\\Modules\\Solici...', true)
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 23-02-2024 16:44:54 --> Unknown column 'p.id' in 'where clause'
+CRITICAL - 23-02-2024 16:44:54 --> Unknown column 'p.id' in 'where clause'
+#0 C:\xampp\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT p.nombre...', 0)
+#1 C:\xampp\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.nombre...')
+#2 C:\xampp\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.nombre...')
+#3 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Models\Pension_Model.php(111): CodeIgniter\Database\BaseConnection->query('SELECT p.nombre...', '1')
+#4 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pensiones_reporte.php(153): Modules\Solicitudes\Models\Pension_Model->oficioPension('1')
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension('1')
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#7 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 23-02-2024 16:44:59 --> Unknown column 'p.id' in 'where clause'
+CRITICAL - 23-02-2024 16:44:59 --> Unknown column 'p.id' in 'where clause'
+#0 C:\xampp\htdocs\gestionhumana\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT p.nombre...', 0)
+#1 C:\xampp\htdocs\gestionhumana\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.nombre...')
+#2 C:\xampp\htdocs\gestionhumana\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.nombre...')
+#3 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Models\Pension_Model.php(111): CodeIgniter\Database\BaseConnection->query('SELECT p.nombre...', '1')
+#4 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pensiones_reporte.php(153): Modules\Solicitudes\Models\Pension_Model->oficioPension('1')
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension('1')
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#7 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 23-02-2024 16:45:44 --> Undefined index: distrito
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pensiones_reporte.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->oficioPension('1')
+#2 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
