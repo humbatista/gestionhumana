@@ -89,3 +89,14 @@ CRITICAL - 12-03-2024 19:38:23 --> Argument 2 passed to CodeIgniter\Database\Bas
 #3 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 12-03-2024 20:06:13 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Views\reporte\pension.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\gestionhumana\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gestionhumana\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gestionhumana\system\Common.php(1097): CodeIgniter\View\View->render('Modules\\Solicit...', Array, true)
+#4 C:\xampp\htdocs\gestionhumana\Modules\Solicitudes\Controllers\Pensiones_reporte.php(30): view('Modules\\Solicit...', Array)
+#5 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(810): Modules\Solicitudes\Controllers\Pensiones_reporte->index()
+#6 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->runController(Object(Modules\Solicitudes\Controllers\Pensiones_reporte))
+#7 C:\xampp\htdocs\gestionhumana\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gestionhumana\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

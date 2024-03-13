@@ -56,7 +56,7 @@
                       <td><?= $row->centro_educativo;?></td>
                       <td><?= $row->area;?></td>
                       <td><?= $row->puesto;?></td>
-                      <td><a href="#" ><i  class="fa fa-file" aria-hidden="true"></i> </a></td>
+                      <td><a href="<?php echo base_url(); ?>/solicitud/admin/oficiopension/<?php echo $row->idpension;?>" ><i  class="fa fa-file" aria-hidden="true"></i> </a></td>
                   </tr>
               <?php endforeach;?>
               </tbody>
