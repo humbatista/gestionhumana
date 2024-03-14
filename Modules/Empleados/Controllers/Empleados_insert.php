@@ -79,5 +79,18 @@ class Empleados_insert extends BaseController{
         return redirect()->to('empleados/servidor?codigo='.$codigo);
     }
 
+    public function desactivar(){
+        $time = new Time('now');
+        $id = $this->request->getPost('id');
+        $model = new Empleados_Model();
+        $data = array(
+            'estado'       => 'I',
+            'modificado' => session('usuario'),
+            'fecmodificado'  => $time
+        );
+        $model->updateServidor($data, $id);
+        return redirect()->to('empleados');
+    }
+
 
 }

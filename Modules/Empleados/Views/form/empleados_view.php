@@ -50,9 +50,10 @@
                 echo "<td>". $rows['vacaciones']. "</td>";
                 echo "<td><i class='fa fa-circle ".$semaforo."'></i></td>";
                 echo "<td>
-                        <a href='http://localhost/gestionhumana/empleados/servidor?codigo=".$rows['codigo']."'>Ver</a>
-                        <a href= 'http://localhost/gestionhumana/empleados/editar?id=".$rows['codigo']."' class='btn btn-sm btn-warning' data-id=". $rows['codigo'].">Editar</a>
+                        <a href='http://localhost/gestionhumana/empleados/servidor?codigo=".$rows['codigo']."'class='btn  btn-info'>Ver</a>
+                        <a href= 'http://localhost/gestionhumana/empleados/editar?id=".$rows['codigo']."' class='btn  btn-warning' data-id=". $rows['codigo'].">Editar</a>
                         <a href= 'http://localhost/gestionhumana/empleados/certificado?id=".$rows['codigo']."' class='btn btn-success'>Certificado</a>
+                        <a href= '#' class='btn btn-danger' data-id=". $rows['codigo'].">Desactivar</a>
                       </td>";
                 echo "</tr>";
             }
@@ -67,6 +68,26 @@
     </div>
 
 </div>
+
+
+<!-- Modal Validacion desactivar -->
+<form action="empleados/desactivar" method="post">
+    <div class="modal fade" id="obsModal" tabindex="-1" role="dialog" aria-labelledby="obsModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>Desea desactivar este codigo</h1>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" name="id" class="id">
+                    <input type="hidden" name="tipo" value='Inclusion'>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="submit" class="btn btn-primary">Si</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 <script>
     function ImpCertificado() {
         //alert('funciona');
@@ -77,5 +98,16 @@
             data:{},
         });
     };
-    </script>
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('.btn-danger').on('click',function(){
+            var id = $(this).data('id');
+            //alert(id)
+            $('.id').val(id);
+            $('#obsModal').modal('show');
+        });
+    });
+</script>
 

@@ -40,6 +40,7 @@ $routes->get('empleados', '\Modules\Empleados\Controllers\Empleados::index');
         $routes->post('cargo/save', '\Modules\Empleados\Controllers\Cargo::save');
         $routes->get('funcion', '\Modules\Empleados\Controllers\Funciones::index');
         $routes->post('funcion/save', '\Modules\Empleados\Controllers\Funciones::save');
+        $routes->post('desactivar', '\Modules\Empleados\Controllers\Empleados_insert::desactivar');
     });
 
     $routes->group('empleados/admin', function ($routes) {
