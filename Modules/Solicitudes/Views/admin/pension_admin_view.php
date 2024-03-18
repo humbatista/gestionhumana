@@ -58,6 +58,7 @@
                         <a href='#' class='btn btn-sm btn-success btn-edit' data-id=". $users['idpension'].">Aprobar</a>
                         <a href='#' class='btn btn-sm btn-warning' data-id=". $users['idpension'].">Devolver</a>
                         <a href='#' class='btn btn-danger btn-sm btn-delete' data-id=". $users['idpension'].">Rechazar</a>
+                        <a href='oficiopension/".$users['idpension']."' class='btn btn-primary btn-sm' data-id=". $users['idpension'].">Solicitar</a>
                       </td>";
                 echo "</tr>";
             }
